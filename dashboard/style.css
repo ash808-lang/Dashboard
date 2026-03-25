@@ -1,0 +1,72 @@
+body{
+background:black;
+color:white;
+font-family:Arial;
+margin:0;
+overflow-x:hidden;
+}
+
+/* crimson glow */
+
+.glow{
+color:crimson;
+text-shadow:
+0 0 5px crimson,
+0 0 10px crimson,
+0 0 20px crimson;
+}
+
+/* dashboard layout */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+}
+
+/* widgets */
+
+.widget{
+background:#0a0a0a;
+padding:20px;
+border-radius:10px;
+border:1px solid crimson;
+box-shadow:0 0 15px rgba(220,20,60,0.4);
+transition:0.3s;
+}
+
+.widget:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px crimson;
+}
+
+/* inputs */
+
+input{
+padding:8px;
+background:black;
+color:white;
+border:1px solid crimson;
+border-radius:5px;
+}
+
+/* buttons */
+
+button{
+padding:8px 12px;
+background:crimson;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* particle canvas */
+
+#particles{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}

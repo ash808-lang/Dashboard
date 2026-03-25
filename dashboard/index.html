@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+		<canvas id="particles"></canvas>
+
+	<h1 id="greeting" class="glow"></h1>
+
+	<div class="dashboard">
+
+		<div class="widget">
+			<h2 class="glow">Clock</h2>
+			<p id="time"></p>
+	</div>
+
+	<div class="widget">
+		<h2 class="glow">Weather</h2>
+		<p id="weather">Loading...</p>
+	</div>
+
+	<div class="widget">
+		<h2 class="glow">Search</h2>
+
+		<form action="https://www.google.com/search" target="_blank">
+		<input name="q" placeholder="Search Google">
+		</form>
+
+	</div>
+		<div class="widget">
+		<h2 class="glow">To-Do</h2>
+
+		<input id="taskInput" placeholder="Add task">
+		<button onclick="addTask()">Add</button>
+
+		<ul id="taskList"></ul>
+	</div>
+
+	<div class="widget">
+		<h2 class="glow">Quote</h2>
+		<p id="quote"></p>
+		</div>
+
+		<div class="widget">
+		<h2 class="glow">Music</h2>
+		<audio controls>
+		<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_4c6e8bbd32.mp3">
+		</audio>
+	</div>
+
+	<div class="widget">
+		<h2 class="glow">Terminal</h2>
+		<input id="cmd" placeholder="type command">
+		<p id="terminalOutput"></p>
+		</div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>
